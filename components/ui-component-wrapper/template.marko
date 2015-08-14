@@ -1,0 +1,13 @@
+
+<div class="ui-component-wrapper">
+    Variant: ${data.variant}
+
+    Using invoke:
+    <invoke function="data.dynamicTag({ name: 'Frank' }, out)"/>
+
+    -------------------------
+
+    Using if...else-if:
+    <ui-component-one name="Frank" if="data.variant === 'one'"/>
+    <ui-component-two name="Frank" else-if="data.variant === 'two'"/>
+</div>
